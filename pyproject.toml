@@ -6,6 +6,8 @@ authors = ["Влад Гуштын <vladislav3372@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+requests = "^2.26.0"
+requests-mock = "^1.9.3"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.9.2"
