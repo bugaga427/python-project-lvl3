@@ -1,1 +1,5 @@
 poetry.lock
+*.xml
+.coverage
+.pytest_cache
+__pycache__
