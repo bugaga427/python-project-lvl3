@@ -8,7 +8,7 @@ def test_download_page():
         with TemporaryDirectory() as tmp:
             tmp_dir_name = tmp
             file_path = download(
-                'https://page-loader.hexlet.repl.co',
+                'https://page-loader.hexlet.repl.co/',
                 tmp_dir_name
             )
             expect_content = expect.read()
