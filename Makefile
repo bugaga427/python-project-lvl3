@@ -11,4 +11,4 @@ package-install:
 test:
 	poetry run pytest --cov=page_loader --cov-report xml tests/
 
-.PHONY: build install test
+.PHONY: build lint package-install test
