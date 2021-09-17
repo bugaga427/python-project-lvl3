@@ -30,4 +30,4 @@ jobs:
     - name: Publish code coverage
       uses: paambaati/codeclimate-action@v2.7.5
       env:
-        CC_TEST_REPORTER_ID: mKERA1bx8g2fCU2B_sFbKkRqGze3Vht-Qf2x6O0YP9c1
+        CC_TEST_REPORTER_ID: fdafaef63475b454fc0a345a0423d7b320dbdd7f
