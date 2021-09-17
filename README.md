@@ -10,3 +10,9 @@
 
 ### Test Coverage
 [![Test Coverage](https://api.codeclimate.com/v1/badges/6a60973876c575267cf0/test_coverage)](https://codeclimate.com/github/bugaga427/python-project-lvl3/test_coverage)
+
+### Page download
+```
+page-loader -o path/to/dir url
+```
+[![asciicast](https://asciinema.org/a/ABYWtkV1hToFE1I4bHVbPzGln.png)](https://asciinema.org/a/ABYWtkV1hToFE1I4bHVbPzGln)
