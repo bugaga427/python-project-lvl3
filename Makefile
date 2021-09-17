@@ -2,6 +2,9 @@ build:
 	rm -rf dist
 	poetry build
 
+lint:
+	poetry run flake8 page_loader
+
 package-install:
 	pip install --user dist/*.whl
 
