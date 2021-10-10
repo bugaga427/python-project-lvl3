@@ -13,7 +13,6 @@ page-loader = "page_loader.scripts.page_loader:main"
 [tool.poetry.dependencies]
 python = "^3.8"
 requests = "^2.26.0"
-requests-mock = "^1.9.3"
 beautifulsoup4 = "^4.10.0"
 html5lib = "^1.1"
 
@@ -21,6 +20,7 @@ html5lib = "^1.1"
 flake8 = "^3.9.2"
 pytest = "^6.2.5"
 pytest-cov = "^2.12.1"
+requests-mock = "^1.9.3"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
