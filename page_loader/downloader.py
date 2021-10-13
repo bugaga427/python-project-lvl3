@@ -17,7 +17,11 @@ def page_loader():
     for img_tag in soup.find_all('img'):
         if img_tag['src'].startswith('/'):
             image_url = url + img_tag['src']
-            download_image(image_url, dir_path)
+            image_path = os.path.relpath(
+                download_image(image_url, dir_path),
+                parser.output
+            )
+            image_tag_replacement(file_path, img_tag['src'], image_path)
     print(file_path)
 
 
@@ -57,3 +61,10 @@ def build_name(url: str, tail: str):
 def writing_to_file(file_path: str, content, mode='w'):
     with open(file_path, mode) as f:
         f.write(content)
+
+
+def image_tag_replacement(path_to_html, old_value, new_value):
+    soup = BeautifulSoup(open(path_to_html).read(), 'html5lib')
+    tag = soup.find(src=old_value)
+    tag['src'] = new_value
+    writing_to_file(path_to_html, soup.prettify())
