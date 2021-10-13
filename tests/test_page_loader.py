@@ -1,5 +1,6 @@
-from page_loader.downloader import download, download_image
+from page_loader.downloader import download, download_image, image_tag_replacement
 from tempfile import TemporaryDirectory
+from bs4 import BeautifulSoup
 import os.path
 import requests_mock
 
@@ -52,3 +53,11 @@ def test_download_page():
             with open(image_path, 'rb') as image:
                 image_content = image.read()
                 assert expect_content == image_content
+
+        image_tag_replacement(
+            html_path,
+            '/assets/professions/nodejs.png',
+            image_path
+        )
+        soup = BeautifulSoup(open(html_path).read(), 'html5lib')
+        assert os.path.samefile(soup.img['src'], image_path)
