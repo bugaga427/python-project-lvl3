@@ -1,4 +1,5 @@
-from page_loader.downloader import download, download_image, image_tag_replacement
+from page_loader.downloader import download, download_image,\
+    image_tag_replacement
 from tempfile import TemporaryDirectory
 from bs4 import BeautifulSoup
 import os.path
