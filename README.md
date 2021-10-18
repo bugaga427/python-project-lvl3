@@ -15,4 +15,4 @@
 ```
 page-loader -o path/to/dir url
 ```
-[![asciicast](https://asciinema.org/a/ABYWtkV1hToFE1I4bHVbPzGln.png)](https://asciinema.org/a/ABYWtkV1hToFE1I4bHVbPzGln)
+[![asciicast](https://asciinema.org/a/wdGLPlhcpZA0VSGeOydfTYAM5.png)](https://asciinema.org/a/wdGLPlhcpZA0VSGeOydfTYAM5)
